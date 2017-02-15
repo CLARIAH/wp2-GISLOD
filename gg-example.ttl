@@ -6,7 +6,7 @@
 @prefix wkt: https://triply.cc/wkt/
 @prefix xsd: http://www.w3.org/2001/XMLSchema#
 
-gg:gemeente/Adorp
+gg:municipality/Adorp
     a cbs:Gemeente ;
     cbs:gemeenteCode "GM0001" ;
     gg:amsterdamseCode "10996" ;
