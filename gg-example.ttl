@@ -1,0 +1,32 @@
+@prefix cbs: https://cbs.nl/
+@prefix gg: https://gemeentegeschiedenis.nl/
+@prefix geo: https://triply.cc/geo/
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema#
+@prefix time: http://www.w3.org/2006/time#
+@prefix wkt: https://triply.cc/wkt/
+@prefix xsd: http://www.w3.org/2001/XMLSchema#
+
+gg:gemeente/Adorp
+    a cbs:Gemeente ;
+    cbs:gemeenteCode "GM0001" ;
+    gg:amsterdamseCode "10996" ;
+    gg:liesIn gem-id:department/we ;
+    gg:liesIn gem-id:province/groningen ;
+    geo:hasGeometry
+        gg:geometry/Adorp-1812 ,
+        gg:geometry/Adorp-1969 ;
+    rdfs:label "Adorp"@nl ;
+    rdfs:seeAlso "http://www.gemeentegeschiedenis.nl/gemeentenaam/adorp"^^xsd:anyURI .
+
+gg:geometry/Adorp-1812
+    a geo:Geometry ;
+    time:hasBeginning "1812"^^xsd:gYear ;
+    time:hasEnd "1968"^^xsd:gYear ;
+    geo:hasWKT "MultiPolygon(((6.561637 53.31025,6.557453 53.272189,6.55067 53.259675,6.558909 53.254023,6.559183 53.24755,6.547954 53.247839,6.543709 53.245993,6.531656 53.254735,6.521581 53.253393,6.531844 53.239187,6.524014 53.237644,6.510344 53.247658,6.509436 53.253058,6.50562 53.267741,6.50479 53.276196,6.501281 53.297076,6.518449 53.29395,6.519297 53.297716,6.507629 53.298904,6.507703 53.301779,6.518796 53.301495,6.522505 53.305594,6.561637 53.31025)))"^^geo:wktLiteral .
+
+gg:geometry/Adorp-1969
+    a geo:Geometry ;
+    gg:absorbedBy gg:municipality/Winsum-1990,
+    time:hasBeginning "1969"^^xsd:gYear ;
+    time:hasEnd "1990"^^xsd:gYear ;
+    geo:asWKT "MultiPolygon(((6.561637 53.31025,6.557453 53.272189,6.55067 53.259675,6.536748 53.260258,6.539825 53.257623,6.538697 53.254668,6.523377 53.253286,6.509436 53.253058,6.50562 53.267741,6.50479 53.276196,6.501281 53.297076,6.518449 53.29395,6.519297 53.297716,6.507629 53.298904,6.507703 53.301779,6.518796 53.301495,6.522505 53.305594,6.561637 53.31025)))"^^geo:wktLiteral .
